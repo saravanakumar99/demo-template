@@ -11,21 +11,17 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   <blockquote class="quote">
-    <p class="quote__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil beatae suscipit natus incidunt recusandae laborum perferendis distinctio exercitationem ipsa veritatis.</p>
-   </blockquote>
-   <footer>
-    <div class="media">
-        <div class="media__image">
-            <svg class="icon">
-                <use xlink:href="/images/sprite.svg#line"></use>
-              </svg>
-        </div>
-        <div class="media__body">
-            <h3 class="media__title">John smith</h3>
-            <p>ABC Company</p>
-        </div>
+   <div class="collapsible ">
+    <header class="collapsible__header">
+        <h2 class="collapsible__heading">Item1</h2>
+        <svg class="icon icon--primary collapsible__chevron">
+            <use xlink:href="images/sprite.svg#computer"></use>
+          </svg>
+    </header>
+    <div class="collapsible__content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore natus ad similique dignissimos assumenda beatae facilis, libero vitae nisi maiores!</p>
     </div>
-   </footer>
-   </body>
+   </div>
+   <script src="js/main.js"></script>
+</body>
 </html> 
