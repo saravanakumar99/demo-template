@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <style>
+        .button-wrapper{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn{
+            width: 100px;
+            height: 50px;
+            border-radius: 20px;
+            outline: none;
+            font-size: 20px;
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="button-wrapper">
+        <button class="btn">click</button>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+
+    <script>
+        document.getElementsByClassName('btn')[0].addEventListener('mouseover',() =>{
+           console.log("hover");
+
+            const jsConfetti = new JSConfetti()
+            jsConfetti.addConfetti({
+            confettiRadius: 3,
+            confettiNumber: 400,
+})
+        });
+
+    </script>
+  
+</body>
+</html>
