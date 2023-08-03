@@ -80,8 +80,11 @@ body{
     background: linear-gradient(to left,#e0e0e0,#ffffff 30%);
 }
 .img{
-    width: 100%;
+    width: 90%;
     padding-top: 5rem;
+    padding-right: 4rem;
+   
+
 
 }
 .outside{
@@ -91,7 +94,6 @@ body{
     letter-spacing: 2px;
     font-weight: 600;
 }
-
 
 
 @media screen and (max-width:736px) {
